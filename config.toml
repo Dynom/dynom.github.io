@@ -1,0 +1,95 @@
+baseURL = 'https://dynom.github.io/'
+languageCode = 'en-gb'
+
+[params]
+title = ""
+author = "Mark"
+description = """
+Declinism holds us back and Kindness is underrated.
+"""
+profilePicture = "images/me_2254_sq.jpg"
+copyright = "2003-{{ YEAR }}"
+
+displayMode = "dark"
+doNotLoadAnimations = true
+contentratio = 0.8
+readMore = true
+postSectionName = "blog"
+rssFullContent = true
+customCss = ["css/style.css", "css/overrides.css"]
+
+disableThemeSwitcher = true
+enableMediumZoom = false
+
+singleDateFormat = "Mon, Jan 2, 2006"
+indexDateFormat = "Mon, Jan 2, 2006"
+listDateFormat = "Jan 2"
+
+[[params.socialIcons]]
+icon = "svg-white wh3 icon-linkedin"
+title = "Linkedin"
+url = "https://www.linkedin.com/in/markvandervelden/"
+
+[[params.socialIcons]]
+icon = "svg-white wh3 icon-mastodon"
+title = "Mastodon"
+url = "https://toot.community/@dynom"
+
+[[params.socialIcons]]
+icon = "svg-white wh3 icon-github"
+title = "Github"
+url = "https://github.com/Dynom"
+
+[[params.socialIcons]]
+icon = "svg-white wh3 icon-keybase"
+title = "Keybase"
+url = "https://keybase.io/dynom"
+
+[[params.socialIcons]]
+icon = "svg-white wh3 icon-stackoverflow"
+title = "Stackoverflow"
+url = "https://stackoverflow.com/users/1061927/dynom"
+
+[[params.socialIcons]]
+icon = "svg-white wh3 icon-keyoxide"
+title = "Keyoxide"
+url = "https://keyoxide.org/hkp/4CBC6501BC56D4211B3563947647897563C41B40"
+
+[[params.socialIcons]]
+icon = "svg-white wh3 icon-wire"
+title = "Wire"
+url = "https://account.wire.com/user-profile/?id=f326a3c7-406c-4c72-852d-f80f971b12d6"
+
+[[params.socialIcons]]
+icon = "svg-white wh3 icon-mentorcruise"
+title = "Mentorcruise"
+url = "https://mentorcruise.com/mentor/MarkvanderVelden/"
+
+
+[outputs]
+home = ["HTML"]
+section = ["HTML", "RSS"]
+taxonomy = ["HTML"]
+term = ["HTML"]
+
+[menu]
+
+[[menu.main]]
+name = "Blog"
+weight = 200
+identifier = "blog"
+url = "/"
+
+[[menu.main]]
+name = "About"
+weight = 300
+identifier = "about"
+url = "/about/"
+
+
+[module]
+# uncomment line below for temporary local development of module
+# replacements = "github.com/lxndrblz/anatole -> ../../anatole"
+[[module.imports]]
+path = "github.com/lxndrblz/anatole"
+disable = false
