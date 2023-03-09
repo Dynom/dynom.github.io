@@ -18,6 +18,7 @@ postSectionName = "blog"
 rssFullContent = true
 customCss = ["css/style.css", "css/overrides.css"]
 
+mainSections = ["blog"]
 disableThemeSwitcher = true
 enableMediumZoom = false
 
