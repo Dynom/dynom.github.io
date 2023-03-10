@@ -1,0 +1,29 @@
+name: Find Markdown problems
+
+on:
+  push:
+    # Run on any branch, but not on tags
+    branches: ["*"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "lint"
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: markdownlint-cli2-action
+        uses: DavidAnson/markdownlint-cli2-action@v9.0.0
+        with:
+          globs: '**/*.md'
