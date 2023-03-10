@@ -22,7 +22,6 @@ defaults:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    permissions:
 
     steps:
       - name: Check Spelling
