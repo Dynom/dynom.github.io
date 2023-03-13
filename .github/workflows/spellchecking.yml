@@ -1,4 +1,4 @@
-name: Find Spelling errors
+name: Find Spelling errors (check-spelling)
 
 on:
   push:
@@ -29,3 +29,4 @@ jobs:
         with:
           checkout: true
           post_comment: 1
+          use_sarif: 1
