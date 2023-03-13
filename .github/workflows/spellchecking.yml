@@ -1,0 +1,31 @@
+name: Find Spelling errors (check-spelling)
+
+on:
+  push:
+    # Run on any branch, but not on tags
+    branches: ["*"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "spelling"
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check Spelling
+        uses: check-spelling/check-spelling@v0.0.21
+        with:
+          checkout: true
+          post_comment: 1
