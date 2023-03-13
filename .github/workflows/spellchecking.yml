@@ -29,4 +29,3 @@ jobs:
         with:
           checkout: true
           post_comment: 1
-          use_sarif: 1
