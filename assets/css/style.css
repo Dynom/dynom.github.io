@@ -22,9 +22,12 @@
     width: 2.2rem;
     height: 2.2rem;
 }
+.post__content .read_more {
+    font-style: italic;
+}
+
 
 /*
-
     I used https://yoksel.github.io/url-encoder/ to convert the SVGs to data URLs
     The SVG Icons are from https://simpleicons.org and some handiwork from myself, with some help from https://boxy-svg.com/
 

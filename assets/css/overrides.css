@@ -10,3 +10,22 @@
 .theme--light .sidebar__introduction-profileimage {
     border: rgb(79, 49, 0) 2px solid;
 }
+
+.post__content h2 {
+    padding-top: 3rem
+}
+
+
+p {
+    /* Overrides the default line-height: 1.9em */
+    line-height: 1.4em;
+}
+
+.theme--dark .post__content a {
+    /* Overrides the low contrast anchor colour #6086b4 */
+    color: #86bcfd;
+}
+
+.post__footer-date {
+    color: #7f7f7f;
+}
