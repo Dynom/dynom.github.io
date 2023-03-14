@@ -43,13 +43,13 @@
 >
     {{ if .Params.thumbnail }}
     <div class="post__thumbnail-wrapper">
-        <a href="{{ .RelPermalink }}">
+        <a aria-label="Link to full post" href="{{ .RelPermalink }}">
             <img class="post__thumbnail" src="{{ .Params.thumbnail | relURL }}" alt="Thumbnail image" loading="lazy" />
         </a>
     </div>
     {{ end }}
     <div class="post__content">
-        <h3><a href="{{ .RelPermalink }}">{{- .Title -}}</a></h3>
+        <h2><a href="{{ .RelPermalink }}" aria-label="Link to full post">{{- .Title -}}</a></h2>
         {{ if .Site.Params.fullPostContent }}
         <p>{{ .Content | markdownify }}</p>
         {{ else }}
@@ -57,7 +57,7 @@
         {{ end }}
         <!-- add read more -->
         {{- if and (.Truncated) (.Site.Params.readMore) -}}
-        <a href="{{ .RelPermalink }}">{{ i18n "read_more" }}</a>
+        <a class="read_more" href="{{ .RelPermalink }}" aria-label="{{ "Continue reading: " }}{{- .Title -}}">{{ "Continue reading: "}}{{- .Title -}}</a>
         {{- end -}}
     </div>
 

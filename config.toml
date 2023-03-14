@@ -7,24 +7,24 @@ author = "Mark"
 description = """
 Declinism holds us back and Kindness is underrated.
 """
-profilePicture = "images/me_2254_sq.jpg"
+profilePicture = ""
 copyright = "2003-{{ YEAR }}"
 
 displayMode = "dark"
 doNotLoadAnimations = true
 contentratio = 0.8
 readMore = true
-postSectionName = "blog"
+postSectionName = "posts"
 rssFullContent = true
 customCss = ["css/style.css", "css/overrides.css"]
 
-mainSections = ["blog"]
+#mainSections = []
 disableThemeSwitcher = true
 enableMediumZoom = false
 
-singleDateFormat = "Mon, Jan 2, 2006"
-indexDateFormat = "Mon, Jan 2, 2006"
-listDateFormat = "Jan 2"
+#singleDateFormat = "Mon, Jan 2, 2006"
+#indexDateFormat = "Mon, Jan 2, 2006"
+#listDateFormat = "Jan 2"
 
 [[params.socialIcons]]
 icon = "svg-white wh3 icon-linkedin"
@@ -76,17 +76,23 @@ term = ["HTML"]
 [menu]
 
 [[menu.main]]
-name = "Blog"
-weight = 200
-identifier = "blog"
+name = "Home"
+weight = 100
+identifier = "home"
 url = "/"
+
+# This only makes sense if we have a few
+#[[menu.main]]
+#name = "Posts"
+#weight = 200
+#identifier = "posts"
+#url = "/posts/"
 
 [[menu.main]]
 name = "About"
 weight = 300
 identifier = "about"
-url = "/about/"
-
+url = "/about"
 
 [module]
 # uncomment line below for temporary local development of module
