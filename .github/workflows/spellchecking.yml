@@ -25,7 +25,7 @@ jobs:
 
     steps:
       - name: Check Spelling
-        uses: check-spelling/check-spelling@v0.0.21
+        uses: check-spelling/check-spelling@v0.0.22
         with:
           checkout: true
           post_comment: 1
